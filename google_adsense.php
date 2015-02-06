@@ -5,7 +5,7 @@
  *	This plugin uses the 160 x 600 ad block.
  */
 
-$plugin_is_filter = 5;
+$plugin_is_filter = 5 | THEME_PLUGIN;
 $plugin_description = gettext("Support for providing Google AdSense");
 $option_interface = "google_adsenseOptions";
 
