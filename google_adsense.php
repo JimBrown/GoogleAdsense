@@ -19,13 +19,13 @@ function printGoogleAdSense() {
 	if (!empty($adsenseClient) && !empty($adsenseSlot)) {
 		?>
 		<!-- Google AdSense -->
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- Zen-RCAG -->
 			<ins class='adsbygoogle'
 				 style='display:inline-block;width:160px;height:600px'
 				 data-ad-client='<?php echo $adsenseClient; ?>'
 				 data-ad-slot='<?php echo $adsenseSlot; ?>'></ins>
-			<script>
+			<script type="text/javascript">
 			(adsbygoogle = window.adsbygoogle || []).push({});
 			</script>
 		<!-- End Google AdSense -->
