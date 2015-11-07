@@ -19,13 +19,13 @@ function printGoogleAdSense() {
 	if (!empty($adsenseClient) && !empty($adsenseSlot)) {
 		?>
 		<!-- Google AdSense -->
-			<script type="text/javascript">
+			<script nomove type="text/javascript">
 					google_ad_client = "<?php echo $adsenseClient; ?>";
 					google_ad_slot = "<?php echo $adsenseSlot; ?>";
 					google_ad_width = 160;
 					google_ad_height = 600;
 			</script>
-			<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+			<script nomove type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
 		<!-- End Google AdSense -->
 		<?php
 	}
