@@ -42,19 +42,19 @@ class google_adsenseOptions {
 	}
 
 	function getOptionsSupported() {
-		return array(  gettext('Google AdSense client ID') => array(
-									'order' => 0,
-									'key' => 'adsenseClient',
-									'type' => OPTION_TYPE_TEXTBOX,
-									'desc' => gettext("If you're going to be using Google AdSense,").' <a	href="http://www.google.com/adsense/" target="_blank"> '.gettext("get an AdSense ID</a> and enter it here.")
-						),
-						gettext('Google AdSense Slot') => array (
-									'order' => 1,
-									'key' => 'adsenseSlot',
-									'type' => OPTION_TYPE_TEXTBOX,
-									'desc' => gettext('Enter the Google AdSense Ad unit ID here.')
-						),
-		);
+		return  array(gettext('Google AdSense client ID') => array(
+  									'order' => 0,
+  									'key' => 'adsenseClient',
+  									'type' => OPTION_TYPE_TEXTBOX,
+  									'desc' => gettext("If you're going to be using Google AdSense,").' <a	href="http://www.google.com/adsense/" target="_blank"> '.gettext("get an AdSense ID</a> and enter it here.")
+                  ),
+    				  		gettext('Google AdSense Slot') => array (
+  									'order' => 1,
+  									'key' => 'adsenseSlot',
+  									'type' => OPTION_TYPE_TEXTBOX,
+  									'desc' => gettext('Enter the Google AdSense Ad unit ID here.')
+                  ),
+            		);
 	}
 
 	function handleOption($option, $currentValue) {}
