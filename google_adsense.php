@@ -18,14 +18,15 @@ function printGoogleAdSense() {
 	$adsenseSlot = getOption('adsenseSlot');
 	if (!empty($adsenseClient) && !empty($adsenseSlot)) {
 		?>
-		<!-- Google AdSense -->
-			<script nomove type="text/javascript">
-					google_ad_client = "<?php echo $adsenseClient; ?>";
-					google_ad_slot = "<?php echo $adsenseSlot; ?>";
-					google_ad_width = 160;
-					google_ad_height = 600;
-			</script>
-			<script nomove type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+    <!-- Google AdSense -->
+      <script nomove async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:inline-block;width:160px;height:600px"
+           data-ad-client="<?php echo $adsenseClient; ?>"
+           data-ad-slot="<?php echo $adsenseSlot; ?>""></ins>
+      <script nomove>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
 		<!-- End Google AdSense -->
 		<?php
 	}
